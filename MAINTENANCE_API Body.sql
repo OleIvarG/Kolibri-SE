@@ -3518,12 +3518,12 @@ OIG 030815 Denne endringen/fixen utgår da de ønsker å rapportere på ny struktur 
       UPDATE discrepancy SET hms_company_org_level_3_id = '309999'
    WHERE hms_company_org_level_3_id IS NULL 
      AND company_id = 'SE'
-     AND dk_company_treekey like '3007%';
+     AND dk_company_treekey like '3009%';
   
   UPDATE discrepancy SET hms_reported_by_org_level_3_id = '309999'
    WHERE hms_reported_by_org_level_3_id IS NULL 
      AND company_id_reported_by = 'SE'
-     AND dk_reported_by_treekey like '3007%';  
+     AND dk_reported_by_treekey like '3009%';  
      
   -- KRAFT --
   UPDATE discrepancy SET hms_company_org_level_3_id = ( SELECT MIN(hms_org_level_3_id) 
